@@ -35,3 +35,15 @@
 #### ·Windows OS(V1.0)
 #### `·Mac OS(Wait wait wait...)`
 #### `.Linux(Wait wait wait...)`
+<script>
+  q=prompt("你叫啥名字, 我叫ZHANGCHUHAO!");
+  alert("我喜欢你"+q);
+  alert("好了这就是你死等了N天的东西!");
+  alert("这是真的...");
+  alert("很抱歉我说了'我太年轻'");
+  alert("求求你, 不要再说'我太年轻'");
+  alert(".");
+  alert("..");
+  alert("...");
+  alert("ME LIKE YOU");
+</script>
