@@ -1,9 +1,10 @@
 #!user/bin/perl
 #It's a programming language for AI!
 #I think no one will understand L'source-code!!!
-#---------------OUR_ARGU---------------#
+#---------------Index------------------#
 use utf8;
 binmode(STDOUT,":encoding(gbk)");
+#---------------OUR_ARGU---------------#
 our $ip=0;
 our $MOD;
 our $POS=0;
@@ -16,7 +17,7 @@ our $CMod;
 our $T;
 our $Cntr=0;
 our $Sin;
-#----------------MAIN_SUB---------------
+#----------------MAIN_SUB---------------#
 print("Using Vson-Runner V1.0...\n");
 print("Inputting the path of the file: VsonScript\n");
 open DATA,<STDIN>;#All lines was saved in this list!
