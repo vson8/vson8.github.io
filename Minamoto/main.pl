@@ -1,5 +1,6 @@
 #!user/bin/perl
 #It's a programming language for AI!
+#I think no one will understand L'source-code!!!
 #---------------OUR_ARGU---------------#
 use utf8;
 binmode(STDOUT,":encoding(gbk)");
@@ -9,12 +10,12 @@ our $POS=0;
 our $TmpPos;
 our %VARPOOL=('CTRL'=>'CAIXUKUN','Door'=>'Oh! Boy next door!'); #FUNNY CONSTANT!!!
 our %Fns;
-   	  our $TIME;
-   	  our $HEN;
-   	  our $CMod;
-   	  our $T;
-   	  our $Cntr=0;
-   	  our $Sin;
+our $TIME;
+our $HEN;
+our $CMod;
+our $T;
+our $Cntr=0;
+our $Sin;
 #----------------MAIN_SUB---------------
 print("Using Vson-Runner V1.0...\n");
 print("Inputting the path of the file: VsonScript\n");
