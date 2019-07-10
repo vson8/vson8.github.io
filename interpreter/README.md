@@ -1,5 +1,5 @@
-# 下载地址
-[Windows](Vsoner.exe)
+# Vsoner下载地址(Windows)
+[Vsoner V8.0](Vsoner.exe)
 # GUIDE/使用手册/説明書/설명서/GUIDE
 ### EN: This is an interpreter, you can play on Windows, just enter the path of the Vson script file into the interpreter, you can execute the program!
 ### ZH: 这是一个解释器，你可以在Windows上面玩，只需要把Vson脚本文件的路径输入到解释器，就可以执行程序了！
