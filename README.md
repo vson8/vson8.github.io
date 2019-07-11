@@ -1,5 +1,5 @@
 # Vson8 Language -The Son of Vinh!
-## *Please Read 《Vson8 Language Guide》*
+## *Please Read `Vson8 Language Guide》`
 ### 0. [简介](vison8/0.md)
 #### 0.1 绍介
 #### 0.2 产品参数
