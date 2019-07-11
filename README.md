@@ -1,8 +1,9 @@
 # Vson Language -The Son of Vinh!
 ## *  Please Read 《Vson Language Guide》
 ### 0. [简介](vison8/introduction.md)
+#### .绍介
 #### ·产品参数
-#### ·创新型语法
+#### ·基本技术
 ### 1. [函数](vison8/function.md)
 #### ·创建
 #### ·参数
@@ -31,5 +32,4 @@
 ### 5. [支持库](vison8/library.md)
 #### ·创建
 #### ·语言本身自带的丰富的支持库
-### 6. 下载
-#### [.下载页](interpreter)
+### 6. [下载](interpreter)
