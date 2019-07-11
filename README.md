@@ -1,5 +1,5 @@
 # Vson Language -The Son of Vinh!
-## ·《Vson Language Guide》
+## *  Please Read 《Vson Language Guide》
 ### 0. [简介](vison8/introduction.md)
 #### ·产品参数
 #### ·创新型语法
