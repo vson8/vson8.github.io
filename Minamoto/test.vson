@@ -1,3 +1,0 @@
-Bark(Input your name: ,#n)
-Say(Q,Get())
-Bark(Hello! ,&(Q))
