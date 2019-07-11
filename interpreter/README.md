@@ -1,4 +1,6 @@
-# Vsoner下载地址(Windows)
-[Vsoner V8.0](Vsoner.exe)
-# 使用手册
-### 这是Vson语言的解释器，你可以在Windows上面玩，只需要把Vson脚本文件的路径输入到解释器，就可以执行程序了！
+# 第6话 下载:
+### Vson 8.0 解释器下载
+* [Vsoner.exe](vsoner.exe)//For Windows
+* [Vsoner.pl](vsoner.pl)//For Linux
+### 使用前的说明书
+基本上大部分的Linux或者mac机上都自带Perl脚本执行器, 您可以直接使用Vsoner.pl, 如果您是Windows系统的用户, 请直接执行Vsoner.exe! 如果您想使用Perl脚本执行器来直接使用Vsoner.pl, 您可以到[Perl官网](https://www.perl.org/get.html)上去下载"StrawberryPerl"或者"ActivePerl"!
