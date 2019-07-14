@@ -1,6 +1,7 @@
 # Vson8语言 · (0_0 SSS
 ## *Vson's soul!*
 欢迎使用Vson脚本语言, 使用前请先行参阅以下<Vson8语言手册>
+
 ![VSON](VL.png)
 ### 0. [引言](vson8/0.md)
 #### 0.1 绍介
