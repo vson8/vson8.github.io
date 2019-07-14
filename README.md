@@ -31,5 +31,5 @@
 #### 5·1 判断
 #### 5.2 循环
 ### 6. [下载](interpreter)
-<link rel = "Shortcut icon" href = "VL.png">
-<link rel = "Bookmark" href = "VL.png">
+<link rel = "Shortcut icon" href = "VL.ico">
+<link rel = "Bookmark" href = "VL.ico">
