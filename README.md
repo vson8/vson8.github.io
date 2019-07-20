@@ -1,1 +1,1 @@
-![VSON](vson.psd)
+![VSON](vson.png)
