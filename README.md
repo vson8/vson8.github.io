@@ -1,25 +1,27 @@
-<h1 style="text-align: center;">
-	<span style="color:#009900;">V</span>apor <span style="color:#cc0000;">S</span>cientist <span style="color:#3333ff;">o</span>f <span style="color:#ff6600;">N</span>oise&nbsp;&nbsp;
+<h1 style="text-align:center;">
+	<strong><span style="color:#E53333;"><span style="background-color:#FFE500;"></span><span style="font-family:&quot;background-color:#FFFFFF;">V</span></span></strong><span style="font-size:12px;"><em>apor</em></span> <strong><span style="color:#006600;font-family:&quot;background-color:#FFFFFF;">S</span></strong><span style="font-size:12px;"><em>cientist</em></span> <strong><span style="color:#E56600;font-family:&quot;">O</span></strong><span style="font-size:12px;"><em>n</em></span> <strong><span style="color:#003399;font-family:&quot;">N</span></strong><span style="font-size:12px;"><em>oise</em></span>
 </h1>
-<div>
-	Welcome to use <span style="color:#009900;">V</span><span style="color:#ff0000;">S</span><span style="color:#3333ff;">O</span><span style="color:#ff6600;">N </span>language! It for coding. You can play it on Windows/Linux or another OS with the interpreter of Perl! I don't know how about it's&nbsp;<span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px;">performance so just try it!</span>
-</div>
-<h1 style="text-align: center;">
-	<span style="color: rgb(51, 51, 51); font-family: arial;"><span style="font-size:24px;">Menu</span></span>
-</h1>
-<div>
-	<ul>
-		<li>
-			<u style=""><span style="color:#330033;">Download the interpreter of</span><span style="color:#ff0000;">&nbsp;</span><span style="color: rgb(0, 153, 0);">V</span><span style="color: rgb(255, 0, 0);">S</span><span style="color: rgb(51, 51, 255);">O</span><span style="color: rgb(255, 102, 0);">N</span></u><br />
-			
-		</li>
-		<li>
-			<u style=""><span style="color:#330033;">Document of</span> <span style="color: rgb(0, 153, 0);">V</span><span style="color: rgb(255, 0, 0);">S</span><span style="color: rgb(51, 51, 255);">O</span><span style="color: rgb(255, 102, 0);">N</span><br />
-			</u>
-		</li>
-		<li>
-			<u style=""><span style="color:#330033;">Source of</span><span style="color:#ff0000;">&nbsp;</span><span style="color: rgb(0, 153, 0);">V</span><span style="color: rgb(255, 0, 0);">S</span><span style="color: rgb(51, 51, 255);">O</span><span style="color: rgb(255, 102, 0);">N</span><br />
-			</u>
-		</li>
-	</ul>
-</div>
+<h3 style="text-align:center;">
+	The coding language (0_0 SSS - VSON
+</h3>
+<p>
+	<s><span style="line-height:1;"></span></s>
+</p>
+<hr />
+<p>
+	<br />
+</p>
+<ul>
+	<li>
+		Reading the&nbsp;<strong><a href="http://vson8.github.io/guide/index.md">Guide</a></strong> of <span style="color:#E53333;"><strong>V</strong></span><span style="color:#006600;"><strong>S</strong></span><span style="color:#E56600;"><strong>O</strong></span><span style="color:#003399;"><strong>N</strong></span>
+	</li>
+	<li>
+		Downloading the&nbsp;<span><span style="color:#000000;"><span style="color:#000000;"><strong><a href="http://vson8.github.io" target="_blank"><span style="color:#003399;">P</span></a></strong></span></span></span><span style="color:#FFFFFF;"><span style="color:#000000;"><strong><a href="http://vson8.github.io/interpreter/index.md" target="_blank">layer</a> </strong>of&nbsp;<strong><span style="color:#E53333;"><strong>V</strong></span><span style="color:#006600;"><strong>S</strong></span><span style="color:#E56600;"><strong>O</strong></span><span style="color:#003399;"><strong>N</strong></span></strong></span></span>
+	</li>
+	<li>
+		Visiting the <strong><a href="http://vson8.github.io/interpreter/main.pl">Source</a></strong> of&nbsp;<strong><span style="color:#E53333;"><strong>V</strong></span><span style="color:#006600;"><strong>S</strong></span><span style="color:#E56600;"><strong>O</strong></span><span style="color:#003399;"><strong>N</strong></span></strong>
+	</li>
+</ul>
+<p>
+	<strong></strong>
+</p>
