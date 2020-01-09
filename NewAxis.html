@@ -1,0 +1,84 @@
+<!--
+    /    /    /
+   |    |    |
+    \    \    \
+    /    /    /
+------------------
+|                |
+|   (  0    0    |
+|                |
+|      _____     |
+|                |
+|                |
+------------------
+  V 子 研 究 所
+-->
+<div id="baka">
+<canvas id="dw" width="300" height="300">BUck</canvas>
+</div>
+</br>
+请输入坐标: 
+<input type="text" id="Dick"/>
+<button onclick="a()">绘</button>
+
+<script>
+var draw = document.getElementById("dw")
+
+X=new Array(1000)
+Y=new Array(1000)
+X[1]=draw.width*1/4
+X[4]=draw.width*1/4
+X[7]=draw.width*1/4
+X[2]=draw.width*(1/4)*2
+X[5]=draw.width*(1/4)*2
+X[8]=draw.width*(1/4)*2
+X[3]=draw.width*(1/4)*3
+X[6]=draw.width*(1/4)*3
+X[9]=draw.width*(1/4)*3
+Y[1]=draw.height*1/4
+Y[2]=draw.height*1/4
+Y[3]=draw.height*1/4
+Y[4]=draw.height*(1/4)*2
+Y[5]=draw.height*(1/4)*2
+Y[6]=draw.height*(1/4)*2
+Y[7]=draw.height*(1/4)*3
+Y[8]=draw.height*(1/4)*3
+Y[9]=draw.height*(1/4)*3
+for(f=0;f<10;f++){
+if(draw.getContext){
+var context = draw.getContext("2d")
+context.fillStyle="#fb0606"
+context.fillRect(X[f]-5,Y[f]-5,10,10)
+}
+}
+function a(){
+clear()
+var draw = document.getElementById("dw");
+for(f=0;f<10;f++){
+if(draw.getContext){
+var context = draw.getContext("2d")
+context.fillStyle="#fb0606"
+context.fillRect(X[f]-5,Y[f]-5,10,10)
+}
+}
+xOy=document.getElementById("Dick").value.split("0")
+for(n=0;n<xOy.length;n++){
+once=xOy[n].split("")
+for(m=0;m<once.length;m++){
+if(draw.getContext){
+var context = draw.getContext("2d")
+context.lineWidth=5
+context.moveTo(X[once[m]],Y[once[m]])
+context.lineTo(X[once[m+1]],Y[once[m+1]])
+context.stroke()
+}
+}
+}
+}
+
+function clear(){
+dw.parentNode.removeChild(dw);
+baka.insertAdjacentHTML('beforeend','<canvas id="dw" width="300" height="300">BUck</canvas>');
+
+}
+</script>
