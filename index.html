@@ -17,6 +17,11 @@
     color:black;
     text-align:center;
 }
+div
+{
+    color:black;
+    text-align:center;
+}
 textarea{
     width: 800px;
     min-height: 200px;
@@ -37,7 +42,7 @@ textarea{
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 button{
-    width: 266.666666666666667px;
+    width: 400px;
     min-height: 200px;
     max-height: 600px;
     _height: 400px;
@@ -57,18 +62,22 @@ button{
 </style>
 </head>
 <img src="head.gif"/><h1 id="h1">真心话题库</h1>
-<h2 id="h2">最后更新时间：2020/02/27 12:01</h1>
+<h2 id="h2"></h2>
+<div>
+<a class="ceshi" href="tencent://message/?Site=baidu.com&uin=2211354141&Menu=yes">个人联络</a>
+<a href="github.com/vson8" target="_blank">开源项目</a>
+</div></br>
 <div id="h3">
 <textarea width="600px" height="300px" id="txt"></textarea><br/>
-<button onclick="a()">提问</button><button onclick="b()">关于</button><button onclick="c()">复制</button>
+<button onclick="a()">提问</button><button onclick="c()">复制</button>
 </br></br>
 此网站自己开着好玩，保证不搞颜色等一切违法事物！
-<a class="ceshi" href="tencent://message/?Site=baidu.com&uin=2211354141&Menu=yes">个人联络</a>
 </div>
 <script>
 
 </script>
 <script>
+
 var notes=[
   '1、你有没有钟意的人?是谁?',
   '2、你的初恋是几岁?',
@@ -169,11 +178,10 @@ var notes=[
   '想考取的学校',
   '我好看吗？？？'
   ];
+	var h1=document.getElementById("h2");
+	h1.innerHTML="题库题目数量："+notes.length+"题！";
   function a(){
 	document.getElementById("txt").value=notes[Math.round(Math.random()*(notes.length-1))];
-  }
-  function b(){
-    document.getElementById("txt").value="题库现有题目数量: "+notes.length+"题!\n"+ "扩展题目请向QQ: 2211354141申请喔!";
   }
   function c(){
 	var text=document.getElementById("txt");
