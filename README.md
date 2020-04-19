@@ -1,4 +1,4 @@
-# Zhang Chuhao's Mainpage
+# 楚
 <style>
     .content {
         width: 300px;
@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <div class="content">
 <p id="p1"></p>
-<h1>2020.2.13至今已</h1>
+2020.2.13至今已
 <h1 id="h1"></h1>
 <p id="p2"></p>
 </div>
