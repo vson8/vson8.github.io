@@ -2,17 +2,10 @@
 ## 我是谁？
 不知道
 ## 顺计时
-<style>
-    .content {
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
-    }
-</style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <div class="content">
 <p id="p1"></p>
-<h1 id="h1"></h1>
+<p id="h1"></p>
 <p id="p2"></p>
 </div>
 <title>顺计时</title>
