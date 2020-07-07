@@ -1,5 +1,5 @@
 元素周期表
-|H(www.baidu.com)|Li|Na|K|
+|[H](www.baidu.com)|Li|Na|K|
 |-|-|-|-|
 ||Be|Mg|Ca|
 ||||Sc|
