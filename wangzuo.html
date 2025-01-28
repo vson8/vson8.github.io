@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>键盘大作战</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            font-family: monospace;
+            overflow: hidden;
+        }
+        #target {
+            font-size: 80px;
+            position: absolute;
+            transition: all 0.1s;
+            cursor: pointer;
+            text-shadow: 0 0 10px red;
+        }
+        #score {
+            font-size: 40px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        #combo {
+            color: #ff0;
+            font-size: 30px;
+            position: fixed;
+            top: 70px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">得分: 0</div>
+    <div id="combo"></div>
+    <div id="target">(╯°Д°)╯左左</div>
+
+    <script>
+        const target = document.getElementById('target');
+        const scoreEl = document.getElementById('score');
+        const comboEl = document.getElementById('combo');
+        let score = 0;
+        let combo = 0;
+        let lastHit = 0;
+
+        // 攻击动作
+        function attack() {
+            const now = Date.now();
+            if (now - lastHit < 500) combo++;
+            else combo = 0;
+            
+            score += 1 + Math.floor(combo/5);
+            scoreEl.textContent = `得分: ${score}`;
+            comboEl.textContent = combo > 0 ? `连击 x${combo}` : '';
+            
+            // 打击动画
+            target.style.transform = `
+                translate(${Math.random()*20-10}px, ${Math.random()*20-10}px)
+                rotate(${Math.random()*10-5}deg)
+            `;
+            target.style.color = `hsl(${Math.random()*360}, 100%, 50%)`;
+            
+            // 生成对话气泡
+            createSpeech(Math.random() > 0.5 ? 
+                "右学长别打了！" : 
+                "小心我用左学长暴打你！");
+            
+            setTimeout(() => {
+                target.style.transform = '';
+            }, 100);
+            
+            lastHit = now;
+            moveTarget();
+        }
+
+        // 创建对话气泡
+        function createSpeech(text) {
+            const bubble = document.createElement('div');
+            bubble.textContent = text;
+            bubble.style.position = 'absolute';
+            bubble.style.left = `${target.offsetLeft + 50}px`;
+            bubble.style.top = `${target.offsetTop - 30}px`;
+            bubble.style.animation = 'float 1s';
+            document.body.appendChild(bubble);
+            setTimeout(() => bubble.remove(), 1000);
+        }
+
+        // 目标移动
+        function moveTarget() {
+            const x = Math.random() * (window.innerWidth - 200);
+            const y = Math.random() * (window.innerHeight - 200);
+            target.style.left = `${x}px`;
+            target.style.top = `${y}px`;
+        }
+
+        // 初始化
+        target.addEventListener('click', attack);
+        moveTarget();
+
+        // 自动嘲讽
+        setInterval(() => {
+            createSpeech(["右学长尼姆没了！", 
+                        "这是资本主义的阴谋！", 
+                        "你在转移主要矛盾！"][Math.floor(Math.random()*3)]);
+        }, 3000);
+
+        // 动画定义
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0% { opacity: 1; transform: translateY(0); }
+                100% { opacity: 0; transform: translateY(-50px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
