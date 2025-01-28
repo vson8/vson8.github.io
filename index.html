@@ -1,3 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>飞舞的郭俊雅</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: pink;
+        }
+        .name {
+            position: absolute;
+            font-family: 'Arial', sans-serif;
+            user-select: none;
+            pointer-events: none;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        #kitty {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 150px;
+            opacity: 0.8;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <img id="kitty" src="https://upload.wikimedia.org/wikipedia/zh/thumb/7/7c/Hello_Kitty_logo.svg/200px-Hello_Kitty_logo.svg.png" alt="Hello Kitty">
+    
+    <script>
+        // 创建名字元素数组
+        const names = [];
+        const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD'];
+        
+        // 创建随机名字元素
+        function createName() {
+            const name = document.createElement('div');
+            name.className = 'name';
+            name.textContent = '郭俊雅';
+            
+            // 随机属性
+            const size = 20 + Math.random() * 30;
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            
+            name.style.fontSize = `${size}px`;
+            name.style.color = color;
+            name.style.left = `${Math.random() * window.innerWidth}px`;
+            name.style.top = `${Math.random() * window.innerHeight}px`;
+            
+            document.body.appendChild(name);
+            return name;
+        }
+
+        // 生成初始名字
+        for (let i = 0; i < 20; i++) {
+            const name = createName();
+            names.push({
+                element: name,
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+                speedX: (Math.random() - 0.5) * 4,
+                speedY: (Math.random() - 0.5) * 4,
+                rotate: Math.random() * 360
+            });
+        }
+
+        // 动画循环
+        function animate() {
+            names.forEach(name => {
+                // 更新位置
+                name.x += name.speedX;
+                name.y += name.speedY;
+                
+                // 边界反弹
+                if (name.x < 0 || name.x > window.innerWidth) name.speedX *= -1;
+                if (name.y < 0 || name.y > window.innerHeight) name.speedY *= -1;
+                
+                // 随机方向变化
+                name.speedX += (Math.random() - 0.5) * 0.3;
+                name.speedY += (Math.random() - 0.5) * 0.3;
+                
+                // 限制最大速度
+                name.speedX = Math.max(-5, Math.min(5, name.speedX));
+                name.speedY = Math.max(-5, Math.min(5, name.speedY));
+                
+                // 旋转效果
+                name.rotate += name.speedX;
+                
+                // 应用变换
+                name.element.style.transform = 
+                    `translate(${name.x}px, ${name.y}px)
+                     rotate(${name.rotate}deg)`;
+            });
+            
+            requestAnimationFrame(animate);
+        }
+
+        // 窗口大小变化处理
+        window.addEventListener('resize', () => {
+            names.forEach(name => {
+                name.x = Math.random() * window.innerWidth;
+                name.y = Math.random() * window.innerHeight;
+            });
+        });
+
+        animate();
+    </script>
+</body>
+</html>
+
 <script>
 
 location.replace("https://mzeh8u4n5uf3ttd5.mikecrm.com/ztQ23x8")
